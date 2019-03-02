@@ -19,7 +19,9 @@ object Details02 {
   def getSum2(n1: Int, n2: Int) {
     return n1 + n2
   }
-
+//  def getSum4(n1:Int,n2:Int)={  这样写会报错
+//    return n1 + n2
+//  }
   //如果函数明确声明无返回值（声明Unit），那么函数体中即使使用return关键字也不会有返回值
   def getSum3(n1: Int, n2: Int): Unit = {
     return n1 + n2
