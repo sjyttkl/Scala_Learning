@@ -7,6 +7,17 @@
     <groupId>com.sjyttkl.day01Scala</groupId>
     <artifactId>day01Scala</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.12</artifactId>
+            <version>2.4.3</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.hadoop</groupId>-->
+            <!--<artifactId>hadoop-client</artifactId>-->
+            <!--<version>2.7.3</version>-->
+        <!--</dependency>-->
+    </dependencies>
 
 </project>
