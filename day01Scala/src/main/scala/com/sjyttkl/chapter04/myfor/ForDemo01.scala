@@ -28,5 +28,9 @@ object ForDemo01 {
     for (item <- list) {
       println("item=" + item)
     }
+    var attr_rule  = List[String]("监听性_降噪\t监听|降噪|静音|防噪|低噪\t降噪|静音|防噪|低噪","包覆_包覆度\t包覆|包裹性\t包覆|包裹|覆盖")
+    for(item <- attr_rule){
+      println(item)
+    }
   }
 }
