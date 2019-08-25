@@ -38,3 +38,5 @@ object Child02 {
 
   def showNum(): Unit = {
     printf("当前有%d小孩玩游戏\n", totalChildNum)
+  }
+}
