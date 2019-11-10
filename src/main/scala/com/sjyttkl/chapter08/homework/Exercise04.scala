@@ -24,6 +24,7 @@ object Suits extends Enumeration {
   //..
   override def toString(): String = { //重写toString方法
     Suits.values.mkString(",") // ♣,♦,♥,♠
+
   }
 
   def isRed(card: Suits) = {

@@ -11,17 +11,17 @@ package com.sjyttkl.chapter08.mixin
 object MixInDemo02 {
   def main(args: Array[String]): Unit = {
     //println("xxx")
-    val mySQL5 = new MySQL5 with DB5 with  File5
+    val mySQL5 = new MySQL5 with DB5 with  File5  //这里File5 里的insert 没有实现，通过混入顺序，已经在DB5里进行实现了。
 
     //1.将数据保存到文件中..
     //2. 将数据保存到数据库中..
     mySQL5.insert(666)
 
     //下面的混入方法是错误
-    //val mySQL5_ = new MySQL5 with File5
+    //val mySQL5_ = new MySQL5 with File5 //这里File5 里的insert 没有实现，
     //mySQL5_.insert(66)
 
-    //val mySQL5_ = new MySQL5 with File5  with   DB5
+    //val mySQL5_ = new MySQL5 with File5  with   DB5 //这里File5 里的insert 没有实现，
 
     //1.将数据保存到数据库中..
     //mySQL5_.insert(666)

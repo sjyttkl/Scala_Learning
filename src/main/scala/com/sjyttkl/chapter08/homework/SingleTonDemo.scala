@@ -3,8 +3,8 @@ package com.sjyttkl.chapter08.homework
 object SingleTonDemo {
   //实现单例
   def main(args: Array[String]): Unit = {
-    val dog = Dog
-    val dog2 = Dog
+    val dog =  Dog
+    val dog2 =  Dog
     println(dog)
     println(dog2)
   }
