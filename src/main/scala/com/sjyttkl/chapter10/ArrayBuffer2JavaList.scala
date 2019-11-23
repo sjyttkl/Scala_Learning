@@ -8,7 +8,7 @@ import scala.collection.mutable.ArrayBuffer
   * E-mail: 695492835@qq.com
   * date: 2019/11/22 21:40 
   * version: 1.0
-  * description:  
+  * description:   scala  和 java 之间相互转换。Array 与List的相互转换
   */
 object ArrayBuffer2JavaList {
   def main(args: Array[String]): Unit = {
