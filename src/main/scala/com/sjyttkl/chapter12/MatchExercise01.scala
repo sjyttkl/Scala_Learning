@@ -18,7 +18,7 @@ object MatchExercise01 {
         case '-' => sign = -1
         // 说明..
         // 可以有多个 默认匹配，但是后面的默认匹配无效，编译器没有报错
-        case _  => digit = 3
+        case _  => digit = 3  //如果case _  c出现在match中间，表示隐藏变量名，即不使用、而不是表示默认匹配
         case _  => sign = 2
       }
       // + 1 0

@@ -23,7 +23,5 @@ object MatchExercise02 {
       }
       println(ch + " " + sign + " " + digit)
     }
-
-
   }
 }
