@@ -2,9 +2,9 @@ package com.sjyttkl.chapter06.oop
 
 object PropertyDemo {
   def main(args: Array[String]): Unit = {
-//    val p1 = new Person
-//    println(p1.Name) //Null
-//    println(p1.address) //String类型
+    val p1 = new Person3
+    println(p1.Name) //Null
+    println(p1.address) //String类型
     val  a = new A
     println(a.var1) // null 还是 ""
     println(a.var2) // 0

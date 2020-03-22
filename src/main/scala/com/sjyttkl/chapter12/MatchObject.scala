@@ -37,6 +37,7 @@ object Square {
   //2. 接收z:Double 类型
   //3. 返回类型是Option[Double]
   //4. 返回的值是 Some(math.sqrt(z)) 返回z的开平方的值，并放入到Some(x)
+  //unapply方法将对象恢复成参数。这经常用于模式匹配与局部函数。
   def unapply(z: Double): Option[Double] = {
     println("unapply被调用 z 是=" + z)
     Some(math.sqrt(z))

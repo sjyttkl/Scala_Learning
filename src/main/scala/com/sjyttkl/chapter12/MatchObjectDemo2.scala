@@ -33,7 +33,7 @@ object MatchObjectDemo2 {
 
 //object
 object Names {
-  //当构造器是多个参数时，就会触发这个对象提取器
+  //当构造器是多个参数时，就会触发这个对象提取器 unapply方法将对象恢复成参数。这经常用于模式匹配与局部函数。
   def unapplySeq(str: String): Option[Seq[String]] = {
     if (str.contains(",")) Some(str.split(","))
     else None

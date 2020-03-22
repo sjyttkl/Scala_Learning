@@ -26,7 +26,6 @@ object Exercise04 extends App {
     scalaMap += (key.asInstanceOf[Int] -> javaMap.get(key))
   }
   println(scalaMap.mkString(" "))
-
 }
 
 
