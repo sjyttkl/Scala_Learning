@@ -33,6 +33,52 @@
         <!--<artifactId>hadoop-client</artifactId>-->
         <!--<version>2.7.3</version>-->
         <!--</dependency>-->
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.13</artifactId>
+            <version>2.6.1</version>
+        </dependency>
 
+    </dependencies>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.4</version>
+            <executions>
+                <execution>
+                    <id>make-jar</id><!--名字任意 -->
+                    <phase>package</phase>   <!-- 绑定到package生命周期阶段上 -->
+                    <goals>
+                        <goal>single</goal>   <!-- 只运行一次 -->
+                    </goals>
+                    <configuration>
+                        <descriptors>   <!--描述文件路径-->
+                            <descriptor>src/main/package/jar.xml</descriptor>
+                        </descriptors>
+                        <!--这样配置后，mvn deploy不会把assembly打的zip包上传到nexus-->
+                        <attach>false</attach>
+                    </configuration>
+                </execution>
+                <!--<execution>-->
+                <!--<id>make-zip</id>&lt;!&ndash;名字任意 &ndash;&gt;-->
+                <!--<phase>package</phase>   &lt;!&ndash; 绑定到package生命周期阶段上 &ndash;&gt;-->
+                <!--<goals>-->
+                <!--<goal>single</goal>   &lt;!&ndash; 只运行一次 &ndash;&gt;-->
+                <!--</goals>-->
+                <!--<configuration>-->
+                <!--<descriptors>   &lt;!&ndash;描述文件路径&ndash;&gt;-->
+                <!--<descriptor>src/main/package/tar.xml</descriptor>-->
+                <!--</descriptors>-->
+                <!--&lt;!&ndash;这样配置后，mvn deploy不会把assembly打的zip包上传到nexus&ndash;&gt;-->
+                <!--<attach>false</attach>-->
+                <!--</configuration>-->
+                <!--</execution>-->
+            </executions>
+        </plugin>
+    </plugins>
+
+    </build>
 </project>
