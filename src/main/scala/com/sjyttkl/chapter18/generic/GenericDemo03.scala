@@ -1,4 +1,4 @@
-package com.atguigu.chapter18.generic
+package com.sjyttkl.chapter18.generic
 
 object GenericDemo03 {
   def main(args: Array[String]): Unit = {

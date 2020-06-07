@@ -1,7 +1,7 @@
-package com.atguigu.chapter18.generic
+package com.sjyttkl.chapter18.generic
 
-import com.atguigu.temp.generic.SeasonEnum
-
+import com.sjyttkl.temp.generic.SeasonEnum
+// https://www.e-learn.cn/topic/3582102
 object GenericDemo02 {
   def main(args: Array[String]): Unit = {
 

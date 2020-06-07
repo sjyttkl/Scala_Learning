@@ -1,5 +1,6 @@
 package com.sjyttkl.chapter11
 
+import scala.language.postfixOps
 /**
   * Create with: com.sjyttkl.chapter11 
   * author: songdongdong  
@@ -23,7 +24,7 @@ object OperatorDemo01 {
 
     println("monster.money=" + monster.money) // 20
 
-    println(monster++)
+    println(monster ++)
     println(monster.++)
     println("monster.money=" + monster.money) // 22
 

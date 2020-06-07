@@ -1,4 +1,4 @@
-package com.atguigu.chapter18.upperbounds
+package com.sjyttkl.chapter18.upperbounds
 
 object UpperBoundsDemo01 {
   def main(args: Array[String]): Unit = {

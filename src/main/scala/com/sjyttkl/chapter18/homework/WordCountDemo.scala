@@ -1,4 +1,4 @@
-package com.atguigu.chapter18.homework
+package com.sjyttkl.chapter18.homework
 
 object WordCountDemo {
   def main(args: Array[String]): Unit = {

@@ -9,7 +9,7 @@ package com.sjyttkl.chapter13
   * description:  闭包 Closure
   * 闭包就是一个函数，和与其相关的引用环境组合的一个整体（实体）
   */
-object ClosureDemo {
+object iClosureDemo {
   def main(args: Array[String]): Unit = {
     /*
    请编写一个程序，具体要求如下

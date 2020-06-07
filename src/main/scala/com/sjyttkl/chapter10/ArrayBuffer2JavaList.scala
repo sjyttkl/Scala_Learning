@@ -3,13 +3,13 @@ package com.sjyttkl.chapter10
 import scala.collection.mutable.ArrayBuffer
 
 /**
-  * Create with: com.sjyttkl.chapter10 
-  * author: sjyttkl
-  * E-mail: 695492835@qq.com
-  * date: 2019/11/22 21:40 
-  * version: 1.0
-  * description:   scala  和 java 之间相互转换。Array 与List的相互转换
-  */
+ * Create with: com.sjyttkl.chapter10
+ * author: sjyttkl
+ * E-mail: 695492835@qq.com
+ * date: 2019/11/22 21:40
+ * version: 1.0
+ * description:   scala  和 java 之间相互转换。Array 与List的相互转换
+ */
 object ArrayBuffer2JavaList {
   def main(args: Array[String]): Unit = {
     // Scala集合和Java集合互相转换
@@ -19,7 +19,10 @@ object ArrayBuffer2JavaList {
     implicit def bufferAsJavaList[A](b : scala.collection.mutable.Buffer[A]) : java.util.List[A] = { /* compiled code */ }
      */
     import scala.collection.JavaConversions.bufferAsJavaList
-//    import scala.collection.JavaConverters.bufferAsJavaList
+    import scala.collection.JavaConversions._
+
+    //    import scala.collection.JavaConverters.bufferAsJavaList
+
     //对象 ProcessBuilder ， 因为 这里使用到上面的  bufferAsJavaList
     val javaArr = new ProcessBuilder(arr) //为什么可以这样使用?,因为隐式转换
     // 这里arrList 就是java中的List

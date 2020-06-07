@@ -1,4 +1,4 @@
-package com.atguigu.chapter18.covariantcontravariant
+package com.sjyttkl.chapter18.covariantcontravariant
 
 object Demo {
   def main(args: Array[String]): Unit = {
