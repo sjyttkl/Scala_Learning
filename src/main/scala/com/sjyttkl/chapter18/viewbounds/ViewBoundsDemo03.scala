@@ -1,21 +1,21 @@
-package com.atguigu.chapter18.viewbounds
+package com.sjyttkl.chapter18.viewbounds
 
 
-
+//使用 implicitly 隐式函数 进行操作，这样就可以不用每次都要转换了
 object ViewBoundsDemo03 {
   def main(args: Array[String]): Unit = {
     val p1 = new Person3("汤姆", 13)
     val p2 = new Person3("杰克", 10)
     //引入隐式函数
-    import MyImplicit._
-    val compareComm3 = new CompareComm3(p1,p2)
+    import com.sjyttkl.chapter18.viewbounds.MyImplicit._
+    val compareComm3 = new CompareComm3(p1, p2)
     println(compareComm3.getter)
 
   }
 }
 
 
-class Person3(val name: String, val age: Int)  {
+class Person3(val name: String, val age: Int) {
   //这里是重写toString,为了显示方便
   override def toString: String = this.name + "\t" + this.age
 }

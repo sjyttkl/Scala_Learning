@@ -1,21 +1,22 @@
 package com.sjyttkl.chapter18.upperbounds
 
+//import Predef //这里藏着很多默认的 隐式转换
 object UpperBoundsDemo01 {
   def main(args: Array[String]): Unit = {
 
-    val compareInt = new CompareInt(10,40)
+    val compareInt = new CompareInt(10, 40)
     println(compareInt.greater) // 40
 
     //第一个用法
-    val commonCompare1 = new CommonCompare(Integer.valueOf(10), Integer.valueOf(40))//Int
+    val commonCompare1 = new CommonCompare(Integer.valueOf(10), Integer.valueOf(40)) //Int，没有实现Comparable，所以不行，需要Integer，，实现了Comparable
     println(commonCompare1.greater)
     //第二个用法
-    val commonCompare2 = new CommonCompare(java.lang.Float.valueOf(1.1f), java.lang.Float.valueOf(2.1f))//Fl
+    val commonCompare2 = new CommonCompare(java.lang.Float.valueOf(1.1f), java.lang.Float.valueOf(2.1f)) //Fl
     println(commonCompare2.greater)
 
     //第3种写法使用了隐式转换
-    //implicit def float2Float(x: Float): java.lang.Float         = x.asInstanceOf[java.lang.Float]
-    val commonCompare3 = new CommonCompare[java.lang.Float](10.1f, 21.1f)//
+    //    implicit def float2Float(x: Float): java.lang.Float         = x.asInstanceOf[java.lang.Float]
+    val commonCompare3 = new CommonCompare[java.lang.Float](10.1f, 21.1f) //
     println(commonCompare3.greater)
   }
 
@@ -29,7 +30,7 @@ object UpperBoundsDemo01 {
 //传统方法
 class CompareInt(n1: Int, n2: Int) {
   //返回较大的值
-  def greater = if(n1 > n2) n1 else n2
+  def greater = if (n1 > n2) n1 else n2
 }
 
 //使用上界(上限)来完成
@@ -38,7 +39,7 @@ class CompareInt(n1: Int, n2: Int) {
 //2. 即你传入的T类要继承Comparable接口
 //3. 这样就可以使用compareTo方法
 //4. 这样的写法(使用上界的写法)通用性比传统的好
-class CommonCompare[T <: Comparable[T]](obj1:T,obj2:T) {
+class CommonCompare[T <: Comparable[T]](obj1: T, obj2: T) {
   def greater = if (obj1.compareTo(obj2) > 0) obj1 else obj2
 }
 

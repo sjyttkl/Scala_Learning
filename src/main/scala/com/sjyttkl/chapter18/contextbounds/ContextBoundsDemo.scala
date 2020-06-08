@@ -1,7 +1,11 @@
 package com.atguigu.chapter18.contextbounds
 
+/**
+ * 类型约束-上下文界定(Context bounds)
+ */
 object ContextBoundsDemo {
-  //这里我定义一个隐式值  Ordering[Person]类型
+  //这里我定义一个隐式值  Ordering[Person]类型 ，这里需要注意 隐式值 和隐式参数的关系。
+  //   一般当 隐式参数没有显示传入参数的人生活， 隐式值 会默认直接传入隐式参数
   implicit val personComparetor = new Ordering[Person4] {
     override def compare(p1: Person4, p2: Person4): Int =
       p1.age - p2.age
@@ -49,6 +53,7 @@ class CompareComm5[T: Ordering](o1: T, o2: T) {
     //如果f1返回的值>0,就返回o1,否则返回o2
     if (f1 > 0) o1 else o2
   }
+
   def lowwer = {
     def f1(implicit cmptor: Ordering[T]) = cmptor.compare(o1, o2) //返回一个数字
     //如果f1返回的值>0,就返回o1,否则返回o2

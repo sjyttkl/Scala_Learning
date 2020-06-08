@@ -1,0 +1,7 @@
+Ordered和Ordering的区别
+
+Ordering继承了java中的Comparator接口，而Ordered继承了java的Comparable接口。 
+而在java中的Comparator是一个外部比较器（需要定义一个类来实现比较器），而Comparable则是一个内部比较器，在类内部重载compareTo函数。 
+因此它们之间的区别和Comparable与Comparator间的区别是相同的。
+
+Ordered还提供了一个隐式转换从T转换为Ordered[T]，隐式参数为Ordering[T]，如下：

@@ -18,20 +18,20 @@ object Demo {
 }
 
 
-//协变
+//协变 covariant
 class Temp4[+A](title: String) { //Temp3[+A] //Temp[-A]
   override def toString: String = {
     title
   }
 }
-//逆变
+//逆变 contravariant
 class Temp5[-A](title: String) { //Temp3[+A] //Temp[-A]
   override def toString: String = {
     title
   }
 }
 
-//不变
+//不变 invariant
 class Temp3[A](title: String) { //Temp3[+A] //Temp[-A]
   override def toString: String = {
     title

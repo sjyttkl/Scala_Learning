@@ -3,7 +3,7 @@ package com.sjyttkl.chapter18.generic
 object GenericDemo01 {
   def main(args: Array[String]): Unit = {
     val intMessage = new IntMessage[Int](10)
-    println(intMessage)
+    println(intMessage.get)
     val strMessage = new StringMessage[String]("hello")
     println(strMessage)
   }

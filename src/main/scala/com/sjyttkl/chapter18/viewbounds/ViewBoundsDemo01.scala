@@ -1,4 +1,4 @@
-package com.atguigu.chapter18.viewbounds
+package com.sjyttkl.chapter18.viewbounds
 
 object ViewBoundsDemo01 {
   def main(args: Array[String]): Unit = {
@@ -13,7 +13,7 @@ object ViewBoundsDemo01 {
     val compareComm4 = new CompareComm[java.lang.Float](201.9f, 30.1f)
     println(compareComm4.greater)
     //上面的小数比较，在视图界定的情况下，就可以这样写了
-    //这里会进行隐式转换
+    //这里会直接进行隐式转换，就不需要像上面一样需要写范型了：java.lang.Float
     val compareComm5 =
       new CompareComm(201.9f, 310.1f)
     println(compareComm5.greater)

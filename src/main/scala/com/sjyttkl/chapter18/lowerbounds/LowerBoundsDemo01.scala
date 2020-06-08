@@ -13,7 +13,7 @@ object LowerBoundsDemo01 {
     biophony(Seq(new Animal, new Animal)).map(_.sound())
 
     //这里我们不能使用上界的思路去推导，这里是可以运行
-    //1.?
+    //1.?，因为这里是下界。可以理解。
     println("===================")
     biophony(Seq(new Bird, new Bird)).map(_.sound())//
 

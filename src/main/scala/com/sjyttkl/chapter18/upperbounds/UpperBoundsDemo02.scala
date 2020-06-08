@@ -1,5 +1,9 @@
-package com.atguigu.chapter18.upperbounds
+package com.sjyttkl.chapter18.upperbounds
 
+
+
+//1)和 Animal 直系的，是 Animal 父类的还是父类处理，是 Animal 子类的按照 Animal 处理()，
+// 2)和 Animal 无关的，一律按照 Object 处理!
 object LowerBoundsDemo {
   def main(args: Array[String]): Unit = {
     biophony(Seq(new Bird, new Bird)) //? √
