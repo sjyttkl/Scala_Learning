@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.proxy.localcandymachine
+package com.sjyttkl.chapter17.proxy.localcandymachine
 
 //用户插入了一块硬币的状态
 class HasCoin extends State {

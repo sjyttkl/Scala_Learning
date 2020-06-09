@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.simplefactory
+package com.sjyttkl.chapter17.simplefactory
 
 class Test {
 

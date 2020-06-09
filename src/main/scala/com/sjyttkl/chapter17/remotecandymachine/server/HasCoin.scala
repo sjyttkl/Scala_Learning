@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.remotecandymachine.server
+package com.sjyttkl.chapter17.remotecandymachine.server
 
 class HasCoin extends State {
   //说明:@transient注解将字段标记为瞬态的,即表示一个域不是该对象串行化的一部分

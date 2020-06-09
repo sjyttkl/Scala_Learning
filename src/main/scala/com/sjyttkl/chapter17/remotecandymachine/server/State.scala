@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.remotecandymachine.server
+package com.sjyttkl.chapter17.remotecandymachine.server
 
 //因为需要在网络传输，因此需要继承Serializable,即序列化
 trait State extends Serializable {

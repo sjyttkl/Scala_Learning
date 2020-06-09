@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.remotecandymachine.server
+package com.sjyttkl.chapter17.remotecandymachine.server
 
 import java.rmi.Naming
 import java.rmi.registry.LocateRegistry

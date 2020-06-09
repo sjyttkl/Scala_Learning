@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.proxy.localcandymachine
+package com.sjyttkl.chapter17.proxy.localcandymachine
 
 class WinnerState extends State {
   //说明:@transient注解将字段标记为瞬态的,即表示一个域不是该对象串行化的一部分

@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.simplefactory.pizzastore.order
+package com.sjyttkl.chapter17.simplefactory.pizzastore.order
 
 import com.atguigu.chapter17.simplefactory.pizzastore.pizza.{GreekPizza, PepperPizza, Pizza}
 

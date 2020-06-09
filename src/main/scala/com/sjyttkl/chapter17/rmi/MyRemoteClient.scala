@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.rmi
+package com.sjyttkl.chapter17.rmi
 
 import java.rmi.Naming
 

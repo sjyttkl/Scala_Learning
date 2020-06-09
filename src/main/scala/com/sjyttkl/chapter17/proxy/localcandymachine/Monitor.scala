@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.proxy.localcandymachine
+package com.sjyttkl.chapter17.proxy.localcandymachine
 
 import scala.collection.mutable.ListBuffer
 

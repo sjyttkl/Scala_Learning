@@ -1,8 +1,8 @@
-package com.atguigu.chapter17.remotecandymachine.client
+package com.sjyttkl.chapter17.remotecandymachine.client
 
 import java.rmi.Naming
 
-import com.atguigu.chapter17.remotecandymachine.server.CandyMachineRemote
+import com.sjyttkl.chapter17.remotecandymachine.server.CandyMachineRemote
 
 
 

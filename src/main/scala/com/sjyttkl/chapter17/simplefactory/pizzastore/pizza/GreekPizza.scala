@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.simplefactory.pizzastore.pizza
+package com.sjyttkl.chapter17.simplefactory.pizzastore.pizza
 
 class GreekPizza extends Pizza {
   override def prepare(): Unit = {

@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.proxy.localcandymachine
+package com.sjyttkl.chapter17.proxy.localcandymachine
 
 trait State extends Serializable {
   def insertCoin() //插入硬币

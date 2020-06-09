@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.proxy.localcandymachine
+package com.sjyttkl.chapter17.proxy.localcandymachine
 
 //处于销售的状态[正在出糖果...]
 class SoldState extends State {
