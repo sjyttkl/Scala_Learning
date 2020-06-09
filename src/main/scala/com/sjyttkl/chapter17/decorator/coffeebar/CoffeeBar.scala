@@ -1,7 +1,7 @@
-package com.atguigu.chapter17.decorator.coffeebar
+package com.sjyttkl.chapter17.decorator.coffeebar
 
-import com.atguigu.chapter17.decorator.coffeebar.mycoffee.{DeCaf, LongBlack}
-import com.atguigu.chapter17.decorator.coffeebar.mydecorator.{Chocolate, Milk, NewMilk}
+import com.sjyttkl.chapter17.decorator.coffeebar.mycoffee.{DeCaf, LongBlack}
+import com.sjyttkl.chapter17.decorator.coffeebar.mydecorator.{Chocolate, Milk, NewMilk}
 
 
 object CoffeeBar {
@@ -13,16 +13,16 @@ object CoffeeBar {
     println("order1 desc:" + order.getDescription())
 
     println("------------------------------------------")
-//  点一份LongBlack,并加入1份Milk 和 2份Chocolate
+    //  点一份LongBlack,并加入1份Milk 和 2份Chocolate
     var order2: Drink = new LongBlack //5.0
     order2 = new Milk(order2) //2.0
-    order2 = new Chocolate(order2)//3.0
-    order2 = new Chocolate(order2)//3.0
+    order2 = new Chocolate(order2) //3.0
+    order2 = new Chocolate(order2) //3.0
     order2 = new NewMilk(order2)
-//
-    println("order2 price:"+order2.cost()); //
-    println("order2 desc:"+order2.getDescription())
-//
-    //java.io.FilterInputStream
+    //
+    println("order2 price:" + order2.cost()); //
+    println("order2 desc:" + order2.getDescription())
+    //
+    //java.io.FilterInputStream。这个也是使用了装饰设计模式
   }
 }

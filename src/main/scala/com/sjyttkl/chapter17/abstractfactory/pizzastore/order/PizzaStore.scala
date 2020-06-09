@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.abstractfactory.pizzastore.order
+package com.sjyttkl.chapter17.abstractfactory.pizzastore.order
 
 object PizzaStore {
   def main(args: Array[String]): Unit = {

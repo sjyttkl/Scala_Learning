@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.abstractfactory
+package com.sjyttkl.chapter17.abstractfactory
 
 class Test {
 

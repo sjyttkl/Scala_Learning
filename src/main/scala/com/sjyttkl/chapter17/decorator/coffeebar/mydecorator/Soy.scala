@@ -1,6 +1,6 @@
-package com.atguigu.chapter17.decorator.coffeebar.mydecorator
+package com.sjyttkl.chapter17.decorator.coffeebar.mydecorator
 
-import com.atguigu.chapter17.decorator.coffeebar.Drink
+import com.sjyttkl.chapter17.decorator.coffeebar.Drink
 
 
 class Soy(obj: Drink) extends Decorator(obj) {

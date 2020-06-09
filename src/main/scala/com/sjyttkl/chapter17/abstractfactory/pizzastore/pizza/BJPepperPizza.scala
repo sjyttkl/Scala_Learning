@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.abstractfactory.pizzastore.pizza
+package com.sjyttkl.chapter17.abstractfactory.pizzastore.pizza
 
 class BJPepperPizza extends Pizza{
   override def prepare(): Unit = {

@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.decorator.coffeebar.mycoffee
+package com.sjyttkl.chapter17.decorator.coffeebar.mycoffee
 
 class DeCaf extends Coffee {
 

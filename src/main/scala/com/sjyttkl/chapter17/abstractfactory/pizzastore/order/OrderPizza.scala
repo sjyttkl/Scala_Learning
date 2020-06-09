@@ -1,7 +1,7 @@
-package com.atguigu.chapter17.abstractfactory.pizzastore.order
+package com.sjyttkl.chapter17.abstractfactory.pizzastore.order
 
-import com.atguigu.chapter17.abstractfactory.pizzastore
-import com.atguigu.chapter17.abstractfactory.pizzastore.pizza.Pizza
+import com.sjyttkl.chapter17.abstractfactory.pizzastore
+import com.sjyttkl.chapter17.abstractfactory.pizzastore.pizza.Pizza
 
 import scala.io.StdIn
 import scala.util.control.Breaks._
@@ -14,7 +14,7 @@ class OrderPizza {
 
   def this(absFactory: AbsFactory) {
     //多态
-    this
+    this //辅助构造器，中一定要调用主构造器
     breakable {
       var orderType: String = null
       var pizza: Pizza = null

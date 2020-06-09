@@ -19,7 +19,7 @@ package com.sjyttkl.chapter09
 object ImplicitVal02 {
   def main(args: Array[String]): Unit = {
     // 隐式变量（值）
-    //    implicit val name: String = "Scala"
+        implicit val name: String = "Scala"
     //implicit val name1: String = "World"
 
     //隐式参数
@@ -38,7 +38,7 @@ object ImplicitVal02 {
     //说明
     //1. 当一个隐式参数匹配不到隐式值，仍然会使用默认值
 
-    implicit val name: Int = 10
+    implicit val name2: Int = 10
     def hello3(implicit content: String = "jack"): Unit = {
       println("Hello3 " + content)
     } //调用hello

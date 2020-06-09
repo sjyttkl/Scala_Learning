@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.observer.observepattern
+package com.sjyttkl.chapter17.observer.observepattern
 
 import scala.collection.mutable.ListBuffer
 
@@ -47,10 +47,11 @@ class WeatherDataSt extends Subject {
       mObservers -= o
     }
   }
+
   //通知，天气情况变化了，我们就通知所有的观察者
   override def notifyObservers(): Unit = {
-    for(observer <- mObservers) {
-      observer.update(mTemperature,mPressure,mHumidity)
+    for (observer <- mObservers) {
+      observer.update(mTemperature, mPressure, mHumidity)
     }
   }
 }

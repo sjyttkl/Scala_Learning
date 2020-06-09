@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.observer.localinternetobserver
+package com.sjyttkl.chapter17.observer.localinternetobserver
 
 
 //这个类你可以理解成是气象局维护的一个提供天气情况数据的核心类

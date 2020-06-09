@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.observer.observepattern
+package com.sjyttkl.chapter17.observer.observepattern
 
 class SinaCurrentConditions extends ObServer {
 

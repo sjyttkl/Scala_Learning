@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.decorator.coffeebar.mycoffee
+package com.sjyttkl.chapter17.decorator.coffeebar.mycoffee
 
 //这个是单品咖啡，在装饰者设计模式中ConcreteComponent
 class Espresso extends Coffee {

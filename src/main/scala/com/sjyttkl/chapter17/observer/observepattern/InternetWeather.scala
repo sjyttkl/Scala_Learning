@@ -1,6 +1,6 @@
-package com.atguigu.chapter17.observer.observepattern
+package com.sjyttkl.chapter17.observer.observepattern
 
-import com.atguigu.chapter17.observer.localinternetobserver.WeatherData
+import com.sjyttkl.chapter17.observer.localinternetobserver.WeatherData
 
 object InternetWeather {
   def main(args: Array[String]): Unit = {
@@ -20,6 +20,6 @@ object InternetWeather {
     //比如天气情况变化，这里设置最新数据
     mWeatherDataSt.setData(20, 150, 40)
 
-    //java.util.Observable
+    //java.util.Observable，java中实现的 观察者模式
   }
 }

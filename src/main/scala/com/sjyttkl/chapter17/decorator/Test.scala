@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.decorator
+package com.sjyttkl.chapter17.decorator
 
 class Test {
 

@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.observer.observepattern
+package com.sjyttkl.chapter17.observer.observepattern
 
 //这个是Subject 是一个trait(接口)
 trait Subject {

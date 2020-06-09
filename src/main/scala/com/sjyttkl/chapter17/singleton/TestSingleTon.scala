@@ -1,4 +1,4 @@
-package com.atguigu.chapter17.singleton
+package com.sjyttkl.chapter17.singleton
 
 object TestSingleTon {
   def main(args: Array[String]): Unit = {

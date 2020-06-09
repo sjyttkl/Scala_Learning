@@ -1,6 +1,6 @@
-package com.atguigu.chapter17.decorator.coffeebar.mydecorator
+package com.sjyttkl.chapter17.decorator.coffeebar.mydecorator
 
-import com.atguigu.chapter17.decorator.coffeebar.Drink
+import com.sjyttkl.chapter17.decorator.coffeebar.Drink
 
 //这个就是Decorator装饰者
 class Decorator extends Drink {
