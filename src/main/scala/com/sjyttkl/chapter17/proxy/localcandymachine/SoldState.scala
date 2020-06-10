@@ -1,6 +1,6 @@
 package com.sjyttkl.chapter17.proxy.localcandymachine
 
-//处于销售的状态[正在出糖果...]
+//处于销售的状态[正在出糖果...]，这里就是代理
 class SoldState extends State {
   //说明:@transient注解将字段标记为瞬态的,即表示一个域不是该对象串行化的一部分
   @transient private var mCandyMachine: CandyMachine = _

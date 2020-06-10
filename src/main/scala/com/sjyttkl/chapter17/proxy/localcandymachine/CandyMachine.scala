@@ -1,6 +1,6 @@
 package com.sjyttkl.chapter17.proxy.localcandymachine
 
-//糖果机状态..
+//糖果机状态..。需要被代理
 class CandyMachine {
 
   var mSoldOutState: State = _

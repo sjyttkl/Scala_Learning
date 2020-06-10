@@ -2,7 +2,7 @@ package com.sjyttkl.chapter17.remotecandymachine.client
 
 
 
-import com.atguigu.chapter17.remotecandymachine.server.CandyMachineRemote
+import com.sjyttkl.chapter17.remotecandymachine.server.CandyMachineRemote
 
 import scala.collection.mutable.ListBuffer
 
