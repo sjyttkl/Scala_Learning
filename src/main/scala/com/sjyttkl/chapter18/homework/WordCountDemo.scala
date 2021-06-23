@@ -26,7 +26,8 @@ val lines = List("atguigu han hello ", "atguigu han aaa aaa aaa ccc ddd uuu")
 //    println("res5=" + res5)
 
     //合在一起,函数不停的进行集合的处理.
-    println(lines.flatMap(_.split(" ")).map((_,1)).groupBy(_._1).map(x=>(x._1,x._2.size)).toList.sortBy(_._2).reverse)
+    println(lines.flatMap(_.split(" ")).map((_,1)).groupBy(_._1).map(x=>(x._1,x._2.size)).toList.sortBy(_._2).reverse) //这里是常规的求wordcount
+    println(lines.flatMap(_.split(" ")).map((_,2)).groupBy(_._1).map(x=>(x._1, x._2.map(x=>x._2).sum ))) //这里是 求第二个参数的和
 
 
   }
