@@ -1,3 +1,5 @@
+package com.sjyttkl.stream;
+
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.apache.commons.collections4.MapUtils;
