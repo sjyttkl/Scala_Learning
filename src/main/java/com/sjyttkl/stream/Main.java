@@ -5,10 +5,7 @@ import com.google.common.collect.Maps;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -47,5 +44,15 @@ public class Main {
             return res;
         }).forEach(result::add);
         System.out.println(result);
+
+
+        ///
+        String text = "我,ni";
+        String array[] =  text.split(",");
+        list = Arrays.stream(array).collect(Collectors.toList());
+
+        System.out.println(Arrays.toString(array));
+        System.out.println(list);
+
     }
 }
